@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
-import javax.el.ELContext;
+//import javax.el.ELContext;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -117,7 +117,7 @@ public class HabilidadeETipoBean implements Serializable {
         //FacesContext.getCurrentInstance().addMessage(null, msg);  
     }
 	
-	public List<Habilidade> getHabilidadesByAluno(){
+/*	public List<Habilidade> getHabilidadesByAluno(){
 		aluno = alunoDao.getAlunoByIdPessoa(getUsuario().getPessoa().getId());
 		return aluno.getHabilidades();
 	}
@@ -131,9 +131,9 @@ public class HabilidadeETipoBean implements Serializable {
 	}
 	
 	public LoginBean getLoginBean(){
-    	ELContext contexto = FacesContext.getCurrentInstance().getELContext();
+    	//ELContext contexto = FacesContext.getCurrentInstance().getELContext();
     	return (LoginBean) contexto.getELResolver().getValue(contexto, null, "loginBean");
-    }
+    }*/
 	
 	public void setHabilidades(List<Habilidade> habilidades) {
 		this.habilidades = habilidades;
