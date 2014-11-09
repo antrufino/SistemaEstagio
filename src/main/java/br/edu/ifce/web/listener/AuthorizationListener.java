@@ -36,7 +36,6 @@ public class AuthorizationListener implements PhaseListener {
 	}
 	
 
-
 	@Override
 	public void beforePhase(PhaseEvent event) {	
 		FacesContext ctx = event.getFacesContext();	

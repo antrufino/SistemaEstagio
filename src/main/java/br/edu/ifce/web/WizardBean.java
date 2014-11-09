@@ -8,8 +8,6 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 
-import org.primefaces.event.FlowEvent;
-
 import br.edu.ifce.entity.ContatoTelefone;
 import br.edu.ifce.entity.Pessoa;
 import br.edu.ifce.entity.Usuario;
@@ -60,7 +58,7 @@ public class WizardBean implements Serializable{
         this.skip = skip;
     }
      
-    public String onFlowProcess(FlowEvent event) {
+/*    public String onFlowProcess(FlowEvent event) {
         if(skip) {
             skip = false;   //reset in case user goes back
             return "confirm";
@@ -69,7 +67,7 @@ public class WizardBean implements Serializable{
             return event.getNewStep();
         }
     }
-    
+    */
     public void save() {        
         FacesMessage msg = new FacesMessage("Cadastro feito com sucesso", "Bem vindo :" + pessoa.getNome());
         FacesContext.getCurrentInstance().addMessage(null, msg);
