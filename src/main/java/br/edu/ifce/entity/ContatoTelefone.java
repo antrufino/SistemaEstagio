@@ -22,7 +22,7 @@ import br.edu.ifce.util.IGenericEntity;
 @Entity
 @Table(name = "contato_telefone")
 @NamedQueries({
-		@NamedQuery(name = "ContatoTelefone", query = "from ContatoTelefone c")
+		@NamedQuery(name = "ContatoTelefone", query = "select c from ContatoTelefone c")
 })
 public class ContatoTelefone implements IGenericEntity<ContatoTelefone> {
 

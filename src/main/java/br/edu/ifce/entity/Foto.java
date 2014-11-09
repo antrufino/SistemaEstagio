@@ -17,7 +17,7 @@ import br.edu.ifce.util.IGenericEntity;
 
 @Entity
 @Table(name = "foto")
-@NamedQueries({ @NamedQuery(name = "Foto", query = "from Foto u") })
+@NamedQueries({ @NamedQuery(name = "Foto", query = "select u from Foto u") })
 public class Foto implements IGenericEntity<Foto>{
 
 	private static final long serialVersionUID = 1L;

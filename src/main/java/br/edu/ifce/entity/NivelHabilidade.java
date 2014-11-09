@@ -31,7 +31,7 @@ import br.edu.ifce.util.IGenericEntity;
 @Entity
 @Table(name = "nivel_habilidade")
 @NamedQueries({
-		@NamedQuery(name = "NivelHabilidade", query = "from NivelHabilidade u")
+		@NamedQuery(name = "NivelHabilidade", query = "select u from NivelHabilidade u")
 })
 public class NivelHabilidade implements IGenericEntity<NivelHabilidade> {
 

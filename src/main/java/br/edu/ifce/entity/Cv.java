@@ -24,7 +24,7 @@ import br.edu.ifce.util.IGenericEntity;
 @Entity
 @Table(name = "cv")
 @NamedQueries({
-		@NamedQuery(name = "Cv", query = "from Cv c")
+		@NamedQuery(name = "Cv", query = "select c from Cv c")
 })
 public class Cv implements IGenericEntity<Cv> {
 

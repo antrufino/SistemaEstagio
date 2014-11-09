@@ -32,7 +32,7 @@ import br.edu.ifce.util.IGenericEntity;
 @Entity
 @Table(name = "tipo_habilidade")
 @NamedQueries({
-		@NamedQuery(name = "TipoHabilidade", query = "from TipoHabilidade h")
+		@NamedQuery(name = "TipoHabilidade", query = "select h from TipoHabilidade h")
 })
 public class TipoHabilidade implements IGenericEntity<TipoHabilidade> {
 

@@ -28,7 +28,7 @@ import br.edu.ifce.util.IGenericEntity;
 @Entity
 @Table(name = "turno")
 @NamedQueries({
-		@NamedQuery(name = "Turno", query = "from Turno t")
+		@NamedQuery(name = "Turno", query = "select t from Turno t")
 })
 public class Turno implements IGenericEntity<Turno> {
 

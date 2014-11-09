@@ -31,7 +31,7 @@ import br.edu.ifce.util.IGenericEntity;
 @Entity
 @Table(name = "tipo_usuario")
 @NamedQueries({
-		@NamedQuery(name = "TipoUsuario", query = "from TipoUsuario u")
+		@NamedQuery(name = "TipoUsuario", query = "select u from TipoUsuario u")
 })
 public class TipoUsuario implements IGenericEntity<TipoUsuario> {
 

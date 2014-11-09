@@ -18,7 +18,7 @@ import br.edu.ifce.util.IGenericEntity;
 
 @Entity
 @Table(name = "empresa")
-@NamedQueries({ @NamedQuery(name = "Empresa", query = "from Empresa e") })
+@NamedQueries({ @NamedQuery(name = "Empresa", query = "select e from Empresa e") })
 public class Empresa implements IGenericEntity<Empresa> {
 
 	private static final long serialVersionUID = 1L;

@@ -23,7 +23,7 @@ import br.edu.ifce.util.IGenericEntity;
 
 @Entity
 @Table(name = "aluno")
-@NamedQueries({ @NamedQuery(name = "Aluno", query = "from Aluno u") })
+@NamedQueries({ @NamedQuery(name = "Aluno", query = "select u from Aluno u") })
 public class Aluno implements IGenericEntity<Aluno> {
 
 	private static final long serialVersionUID = 1L;

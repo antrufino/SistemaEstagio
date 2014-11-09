@@ -29,7 +29,7 @@ import br.edu.ifce.util.IGenericEntity;
 @Entity
 @Table(name = "tipo_rede_social")
 @NamedQueries({
-		@NamedQuery(name = "TipoRedeSocial", query = "from TipoRedeSocial rs")
+		@NamedQuery(name = "TipoRedeSocial", query = "select rs from TipoRedeSocial rs")
 })
 public class TipoRedeSocial implements IGenericEntity<TipoRedeSocial> {
 

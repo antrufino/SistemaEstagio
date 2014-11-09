@@ -20,7 +20,7 @@ import br.edu.ifce.util.IGenericEntity;
 
 @Entity
 @Table(name = "estagio")
-@NamedQueries({@NamedQuery(name = "Estagio", query = "from Estagio t")})
+@NamedQueries({@NamedQuery(name = "Estagio", query = "select t from Estagio t")})
 public class Estagio implements IGenericEntity<Estagio> {
 
 	private static final long serialVersionUID = 1L;
