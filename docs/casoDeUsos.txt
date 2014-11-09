@@ -1,0 +1,16 @@
+1 - Cadastro inicial feito pelo CAECOMP;
+2 - Empresa cadastrada pelo CA;
+3 - Senha gerada pelo sistema, e enviada por email para usuário e empresa;
+4 - CA cadastra habilidades
+5 - Crud's Simples: turma, tipoUsuario, tipoHabilidade, tipoRedeSocial,...
+6 - Caso de uso de Pessoa
+	- Validações: CPF, 
+7 - Cadastro de Usuário
+8 - Cadastro de aluno
+	- Validação de matricula
+	- Cadastrar curriculum, url do lates
+9 - Cadastro empresa
+	- Validar CNPJ, 
+10 - Cadastro de estágio
+	- validar dataInicio, dataFim, carga horária semanal
+11 - Caso de uso login

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/layout/layoutPrivateDefault.xhtml">
+        <ui:define name="title">Nova Vaga de Estágio</ui:define>
+        <ui:define name="container">
+                <h:form>
+                        <p:dataTable id="estagioTable" var="estagio" value="#{estagioBean.estagioList}" paginator="true"
+                                emptyMessage="Nenhum estagio encontrada!" rendered="#{!estagioBean.form}">
+                                <p:column width="200">
+                                        <f:facet name="header">
+                                                <p:commandLink action="#{estagioBean.form}" update="@form" title="Cadastrar Novo Estágio" styleClass="btn btn-primary btn-sm">
+                                                        <i class="fa fa-plus-square"/>
+                                                        Novo
+                                                </p:commandLink>
+                                        </f:facet>
+                                        <p:commandLink update="@form" actionListener="#{estagioBean.form}" styleClass="btn btn-primary btn-sm">
+                                                <f:setPropertyActionListener target="#{estagioBean.estagio}" value="#{estagio}"/>
+                                                <i class="fa fa-pencil"/>
+                                                Editar
+                                        </p:commandLink>&nbsp;
+                                        
+                                        <p:commandLink action="#{estagioBean.excluir}" update="@form" styleClass="btn btn-danger btn-sm"> 
+                                                <f:setPropertyActionListener target="#{estagioBean.estagio}" value="#{estagio}"/>
+                                                <i class="fa fa-times-circle"/>  
+                                                Excluir
+                                                <p:confirm header="Excluir estagio" message="Confirma exclusão dessa  vaga de estágio?" icon="ui-icon-alert" /> 
+                                        </p:commandLink> 
+                                        
+                                        <p:confirmDialog global="true">  
+                                        <p:commandButton value="Sim, confirmo." type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check"/>  
+                                        <p:commandButton value="Não, agora não." type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close"/>       
+                                    </p:confirmDialog> 
+                                </p:column>
+                                <p:column headerText="Título da Vaga">
+                                        #{estagio.dsEstagio}
+                                </p:column>             
+                                <p:column headerText="Data de Início">                                         
+                                        <h:outputText value="#{estagio.dtInicio}">
+												<f:convertDateTime pattern="dd/MM/yyyy" />
+										</h:outputText>  				             	
+                                </p:column>
+                                <p:column headerText="Data de Fim">
+                                        <h:outputText value="#{estagio.dtFim}">
+												<f:convertDateTime pattern="dd/MM/yyyy" />
+										</h:outputText>  
+                                </p:column>                             
+                                <p:column headerText="Valor da Bolsa">
+                                        #{estagio.bolsa}
+                                </p:column>  
+                                <p:column headerText="Beneficios">
+                                        #{estagio.beneficios}
+                                </p:column>                  
+                                <p:column headerText="Carga Horária Semanal">
+                                        #{estagio.chSemanal}
+                                </p:column>             
+                        </p:dataTable>
+                        
+                        <p:panel header="Estágio" rendered="#{estagioBean.form}" styleClass="form-horizontal">
+              					<p:messages rendered="true"></p:messages>  
+                                <div class="form-group">
+                                    <label for="cdCPF" class="col-sm-2 control-label">Título da Vaga:</label>
+                                    <div class="col-sm-10">
+                                    <p:inputText styleClass="form-control" value="#{estagioBean.estagio.dsEstagio}" maxlength="80" style="width:60%"
+                                                        rendered="true" required="true" requiredMessage="Informe o Título da Vaga"/>                       
+                                    </div> 
+                                </div>
+                                <div class="form-group">                             
+                                    <label for="cdCPF" class="col-sm-2 control-label">Data de Início:</label>
+                                    <div class="col-sm-10">
+                                             <!--   <p:inputText styleClass="form-control" value="#{estagioBean.estagio.dtInicio}" maxlength="80" style="width:60%"
+                                                        rendered="true" required="true" requiredMessage="Informe a Data de Início" /> -->
+                                     <p:calendar id="dtInicio" requiredMessage="Informe a data de início"
+							                     value="#{estagioBean.estagio.dtInicio}" showOn="button" pattern="dd/MM/yyyy"  required="true" />&nbsp;                
+                                    </div>
+                                </div>
+                                <div class="form-group">   
+                                    <label for="cdCPF" class="col-sm-2 control-label">Data de Fim:</label>
+                                    <div class="col-sm-10">
+                                               <!--   <p:inputText styleClass="form-control" value="#{estagioBean.estagio.dtFim}" maxlength="80" style="width:60%"
+                                                        rendered="true" required="true" requiredMessage="Informe Data de Fim" />&nbsp; -->
+                                                 <p:calendar id="dtFim" requiredMessage="Informe a data de fim"
+							                     value="#{estagioBean.estagio.dtFim}" showOn="button" pattern="dd/MM/yyyy"  required="true" />&nbsp;                                
+                                    </div>
+                                </div>
+                                <div class="form-group">   
+                                      <label for="cdCPF" class="col-sm-2 control-label">Valor da Bolsa :</label>
+                                    <div class="col-sm-10">
+                                                <p:inputText styleClass="form-control" value="#{estagioBean.estagio.bolsa}" maxlength="20" style="width:60%"
+                                                        rendered="true" required="true"  requiredMessage="Informe valor da bolsa do estagio"/>&nbsp;                               
+                                    </div>
+                                    </div>
+                                <div class="form-group">   
+                                      <label for="cdCPF" class="col-sm-2 control-label">Beneficios:</label>
+                                    <div class="col-sm-10">
+                                                <p:inputText styleClass="form-control" value="#{estagioBean.estagio.beneficios}" maxlength="20" style="width:60%"
+                                                        rendered="true" requiredMessage="Informe quais os beneficios oferecidos"/>                                 
+                                    </div>    
+                        	    	</div>
+         					    <div class="form-group">   
+                                      <label for="cdCPF" class="col-sm-2 control-label">Carga Horária Semanal:</label>
+                                    <div class="col-sm-10">
+                                                <p:inputText styleClass="form-control" value="#{estagioBean.estagio.chSemanal}" maxlength="20" style="width:60%"
+                                                        rendered="true" requiredMessage="Informe qual a Carga Horária Semanal"/>                                 
+                                    </div>    
+                        		    </div>        
+                                <div class="text-center">
+                                        <p:commandLink action="#{estagioBean.salvar}" update="@form" styleClass="btn btn-primary btn-sm">
+                                                <i class="fa fa-save" />
+                                                Salvar
+                                        </p:commandLink>
+                                        &nbsp;
+                                        <p:commandLink  action="#{estagioBean.grid}" update="@form" styleClass="btn btn-danger btn-sm" process="@this">
+                                                <i class="fa fa-reply-all" />
+                                                Cancelar
+                                        </p:commandLink>
+                                </div>
+                                
+                        </p:panel>
+                
+                </h:form>
+        </ui:define>
+</ui:composition>
+</html>

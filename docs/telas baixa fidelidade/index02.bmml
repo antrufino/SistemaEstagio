@@ -1,0 +1,99 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1495" measuredH="892" mockupW="1280" mockupH="800">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Component" x="215" y="92" w="1280" h="800" measuredW="1280" measuredH="800" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/Firefox%205%20for%20Windows.bmml#Firefox%205%20Windows</src>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Component" x="748" y="245" w="208" h="43" measuredW="208" measuredH="43" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="0" w="208" h="43">
+          <text>%7Bsize%3A36%7DMeu%20Est%E1gio%7Bsize%7D</text>
+        </override>
+        <src>./assets/Bootstrap.bmml#bs-h1</src>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Component" x="1210" y="474" w="111" h="105" measuredW="111" measuredH="105" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="0" w="111" h="105"/>
+        <override controlID="-1"/>
+        <src>./assets/Bootstrap.bmml#bs-thumbnail</src>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Component" x="831" y="474" w="111" h="105" measuredW="111" measuredH="105" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="0" w="111" h="105"/>
+        <override controlID="-1"/>
+        <src>./assets/Bootstrap.bmml#bs-thumbnail</src>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Component" x="405" y="474" w="111" h="105" measuredW="111" measuredH="105" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="0" w="111" h="105"/>
+        <override controlID="-1"/>
+        <src>./assets/Bootstrap.bmml#bs-thumbnail</src>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="305" y="594" w="-1" h="-1" measuredW="311" measuredH="32" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>280%20Empresas%20Cadastradas</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="759" y="594" w="-1" h="-1" measuredW="271" measuredH="32" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>Mais%20de%2023.000%20usu%E1rios</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Label" x="1103" y="594" w="-1" h="-1" measuredW="325" measuredH="32" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>23.000%20seguidores%20no%20Twitter</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Paragraph" x="348" y="303" w="1028" h="156" measuredW="275" measuredH="80" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>20</size>
+        <text>On%20the%20other%20hand%2C%20we%20denounce%20with%20righteous%20indignation%20and%20dislike%20men%20who%20are%20so%20beguiled%20and%20demoralized%20by%20the%20charms%20of%20pleasure%20of%20the%20moment%2C%20so%20blinded%20by%20desire%2C%20that%20they%20cannot%20foresee%20the%20pain%20and%20trouble%20that%20are%20bound%20to%20ensue%3B%20and%20equal%20blame%20belongs%20to%20those%20who%20fail%20in%20their%20duty%20through%20weakness%20of%20will%2C%20which%20is%20the%20same%20as%20saying%20through%20shrinking%20from%20toil%20and%20pain.%20These%20cases%20are%20perfectly%20simple%20and%20easy%20to%20distinguish.%20In%20a%20free%20hour%2C%20when%20our%20power%20of%20choice%20is%20untrammelled%20and%20when%20nothing%20prevents%20our%20being%20able%20to%20do%20what%20we%20like%20best%2C%20every%20pleasure%20is%20to%20be%20welcomed%20and%20every.</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Component" x="1210" y="673" w="111" h="105" measuredW="111" measuredH="105" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="0" w="111" h="105"/>
+        <src>./assets/Bootstrap.bmml#bs-thumbnail</src>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Component" x="831" y="673" w="111" h="105" measuredW="111" measuredH="105" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="0" w="111" h="105"/>
+        <src>./assets/Bootstrap.bmml#bs-thumbnail</src>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Component" x="405" y="673" w="111" h="105" measuredW="111" measuredH="105" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="0" w="111" h="105"/>
+        <src>./assets/Bootstrap.bmml#bs-thumbnail</src>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="328" y="824" w="-1" h="-1" measuredW="247" measuredH="32" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>1400%20F%E3s%20no%20Facebook</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="781" y="824" w="-1" h="-1" measuredW="199" measuredH="32" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>design%20responsivo</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Label" x="1170" y="824" w="-1" h="-1" measuredW="186" measuredH="32" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>Powered%20by%20IFCE</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

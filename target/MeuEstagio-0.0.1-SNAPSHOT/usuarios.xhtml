@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/layout/layoutPrivateDefault.xhtml">
+	<ui:define name="title">Meu Estágio - Usuários</ui:define>
+	<ui:define name="container">
+		<h:form>
+			<p:dataTable id="usuarioTable" var="usuario" value="#{usuarioBean.usuarios}" paginator="true"
+				emptyMessage="Nenhum usuário encontrado!">
+				<p:column width="200">
+					<p:commandButton update="@form" value="Editar">
+			 			<f:setPropertyActionListener target="#{usuarioBean.usuario}" value="#{usuario}"/>
+					</p:commandButton>
+					<p:commandButton action="#{usuarioBean.excluir}" update="@form" value="Excluir"> 
+						<f:setPropertyActionListener target="#{usuarioBean.usuario}" value="#{usuario}"/>
+						<p:confirm header="Excluir Usuário" message="Deseja realmente excluir este usuário?" icon="ui-icon-alert" /> 
+				   	</p:commandButton>  
+				 	<p:confirmDialog global="true" showEffect="fade" hideEffect="explode">  
+				        <p:commandButton value="Sim, Claro" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check"/>  
+				        <p:commandButton value="Não, ainda não!" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close"/>       
+				    </p:confirmDialog> 
+				</p:column>
+				<p:column headerText="Usuário">
+					#{usuario.cdUsuario}
+				</p:column>
+				<p:column headerText="Email">
+					#{usuario.cdEmail}
+				</p:column>
+			</p:dataTable>
+			<p:panel>
+				<p:panelGrid columns="2">
+					Nome:
+					<p:inputText value="#{usuarioBean.usuario.cdUsuario}"/>
+					Email:
+					<p:inputText value="#{usuarioBean.usuario.cdEmail}"/>
+				</p:panelGrid>
+				<p:commandButton value="Salvar" action="#{usuarioBean.salvar}" update="@form"/>
+			</p:panel>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>

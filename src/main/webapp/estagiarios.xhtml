@@ -1,0 +1,66 @@
+<!-- Falta Concluir -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/layout/layoutPrivateDefault.xhtml">
+	<ui:define name="title">Estagiarios</ui:define>
+	<ui:define name="container">
+		<h:form>
+			<p:dataTable id="usuarioTable" var="estagiario" value="#{estagiariosBean.usuarios}" paginator="true"
+				emptyMessage="Nenhum tipo de usuário encontrado!" rendered="#{!tipoUsuarioBean.form}">
+				<p:column width="200">
+					<f:facet name="header">
+						<p:commandLink action="#{estagiariosBean.form}" update="@form" title="Cadastrar Novo Tipo de Usuário" styleClass="btn btn-primary btn-sm">
+							<i class="fa fa-plus-square"/>
+							Novo
+						</p:commandLink>
+					</f:facet>
+					<p:commandLink update="@form" actionListener="#{estagiariosBean.form}" styleClass="btn btn-primary btn-sm">
+			 			<f:setPropertyActionListener target="#{estagiariosBean.usuarios}" value="#{estagiarios}"/>
+			 			<i class="fa fa-pencil"/>
+			 			Editar
+					</p:commandLink>&nbsp;
+					<p:commandLink action="#{estagiariosBean.excluir}" update="@form" styleClass="btn btn-danger btn-sm"> 
+						<f:setPropertyActionListener target="#{estagiariosBean.usuarios}" value="#{estagiarios}"/>
+						<i class="fa fa-times-circle"/>  
+						Excluir
+						<p:confirm header="Excluir Usuário" message="Deseja realmente excluir este tipo de usuário?" icon="ui-icon-alert" /> 
+				   	</p:commandLink>  
+				 	<p:confirmDialog global="true" showEffect="fade" hideEffect="explode">  
+				        <p:commandButton value="Sim, Claro" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check"/>  
+				        <p:commandButton value="Não, ainda não!" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close"/>       
+				    </p:confirmDialog> 
+				</p:column>
+				<p:column headerText="Usuário">
+					#{tipoUsuario.dsTipoUsuario}estagiarios
+				</p:column>
+			</p:dataTable>
+			<p:panel header="Tipo de Usuário" rendered="#{tipoUsuarioBean.form}" styleClass="form-horizontal">
+				<div class="form-group">
+				    <label for="cdCPF" class="col-sm-2 control-label">Tipo de Usuário:</label>
+				    <div class="col-sm-8">
+						<p:inputText styleClass="form-control" value="#{tipoUsuarioBean.tipoUsuario.dsTipoUsuario}" maxlength="80"
+							rendered="true" requiredMessage="Informe o Tipo de Usuário!"/>				    
+				    </div>
+		    	</div>
+				<div class="text-center">
+					<p:commandLink action="#{tipoUsuarioBean.salvar}" update="@form" styleClass="btn btn-primary btn-sm">
+						<i class="fa fa-save" />
+						Salvar
+					</p:commandLink>
+					&nbsp;
+					<p:commandLink  action="#{tipoUsuarioBean.grid}" update="@form" styleClass="btn btn-danger btn-sm">
+						<i class="fa fa-reply-all" />
+						Cancelar
+					</p:commandLink>
+				</div>
+				<p:calendar id="fsdfs"></p:calendar>
+			</p:panel>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>

@@ -1,0 +1,426 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="595" measuredH="535" mockupW="525" mockupH="453">
+  <controls>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="103" y="262" w="-1" h="-1" measuredW="98" measuredH="26" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>true</bold>
+        <color>2848996</color>
+        <size>18</size>
+        <text>Person%20Box</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="287" y="261" w="-1" h="-1" measuredW="91" measuredH="26" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>true</bold>
+        <color>2848996</color>
+        <size>18</size>
+        <text>Group%20Box</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="__group__" x="103" y="334" w="94" h="159" measuredW="94" measuredH="159" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Person</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="71" w="94" h="88" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="18">
+          <controlProperties>
+            <borderColor>3355443</borderColor>
+            <color>3355443</color>
+            <markup>false</markup>
+            <shape>roundRect</shape>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::RoundButton" x="20" y="64" w="55" h="95" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="18">
+          <controlProperties>
+            <borderColor>3355443</borderColor>
+            <color>3355443</color>
+            <markup>false</markup>
+            <shape>roundRect</shape>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="18" y="0" w="58" h="72" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="18">
+          <controlProperties>
+            <borderColor>16777215</borderColor>
+            <color>3355443</color>
+            <markup>false</markup>
+            <shape>circle</shape>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="19" controlTypeID="__group__" x="258" y="335" w="145" h="159" measuredW="145" measuredH="159" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Group</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="1" controlTypeID="__group__" x="0" y="24" w="124" h="135" measuredW="124" measuredH="135" zOrder="0" locked="false" isInGroup="19">
+          <controlProperties>
+            <controlName>Person</controlName>
+          </controlProperties>
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="57" w="124" h="78" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>3355443</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>roundRect</shape>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::RoundButton" x="16" y="51" w="45" h="83" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>3355443</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>roundRect</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="15" y="0" w="48" h="59" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>16777215</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>circle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="2" controlTypeID="__group__" x="51" y="0" w="94" h="159" measuredW="94" measuredH="159" zOrder="1" locked="false" isInGroup="19">
+          <controlProperties>
+            <controlName>Person</controlName>
+          </controlProperties>
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="71" w="94" h="88" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="2">
+              <controlProperties>
+                <borderColor>3355443</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>roundRect</shape>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::RoundButton" x="20" y="64" w="55" h="95" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="2">
+              <controlProperties>
+                <borderColor>3355443</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>roundRect</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="18" y="0" w="58" h="72" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="2">
+              <controlProperties>
+                <borderColor>16777215</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>circle</shape>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Label" x="119" y="509" w="-1" h="-1" measuredW="62" measuredH="26" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>true</bold>
+        <color>2848996</color>
+        <size>18</size>
+        <text>Person</text>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::Label" x="301" y="508" w="-1" h="-1" measuredW="55" measuredH="26" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>true</bold>
+        <color>2848996</color>
+        <size>18</size>
+        <text>Group</text>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="__group__" x="251" y="84" w="164" h="164" measuredW="164" measuredH="164" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Group%20Box</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="0" w="164" h="164" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="22">
+          <controlProperties>
+            <backgroundAlpha>0</backgroundAlpha>
+            <borderColor>3355443</borderColor>
+            <color>3355443</color>
+            <markup>false</markup>
+            <shape>roundRect</shape>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="__group__" x="10" y="4" w="145" h="159" measuredW="145" measuredH="159" zOrder="1" locked="false" isInGroup="22">
+          <controlProperties>
+            <controlName/>
+          </controlProperties>
+          <groupChildrenDescriptors>
+            <control controlID="1" controlTypeID="__group__" x="0" y="24" w="124" h="135" measuredW="124" measuredH="135" zOrder="0" locked="false" isInGroup="1">
+              <controlProperties>
+                <controlName>Person</controlName>
+              </controlProperties>
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="57" w="124" h="78" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="1">
+                  <controlProperties>
+                    <borderColor>3355443</borderColor>
+                    <color>3355443</color>
+                    <markup>false</markup>
+                    <shape>roundRect</shape>
+                  </controlProperties>
+                </control>
+                <control controlID="1" controlTypeID="com.balsamiq.mockups::RoundButton" x="16" y="51" w="45" h="83" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="1">
+                  <controlProperties>
+                    <borderColor>3355443</borderColor>
+                    <color>3355443</color>
+                    <markup>false</markup>
+                    <shape>roundRect</shape>
+                    <text/>
+                  </controlProperties>
+                </control>
+                <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="15" y="0" w="48" h="59" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="1">
+                  <controlProperties>
+                    <borderColor>16777215</borderColor>
+                    <color>3355443</color>
+                    <markup>false</markup>
+                    <shape>circle</shape>
+                    <text/>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="2" controlTypeID="__group__" x="51" y="0" w="94" h="159" measuredW="94" measuredH="159" zOrder="1" locked="false" isInGroup="1">
+              <controlProperties>
+                <controlName>Person</controlName>
+              </controlProperties>
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="71" w="94" h="88" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="2">
+                  <controlProperties>
+                    <borderColor>3355443</borderColor>
+                    <color>3355443</color>
+                    <markup>false</markup>
+                    <shape>roundRect</shape>
+                  </controlProperties>
+                </control>
+                <control controlID="1" controlTypeID="com.balsamiq.mockups::RoundButton" x="20" y="64" w="55" h="95" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="2">
+                  <controlProperties>
+                    <borderColor>3355443</borderColor>
+                    <color>3355443</color>
+                    <markup>false</markup>
+                    <shape>roundRect</shape>
+                    <text/>
+                  </controlProperties>
+                </control>
+                <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="18" y="0" w="58" h="72" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="2">
+                  <controlProperties>
+                    <borderColor>16777215</borderColor>
+                    <color>3355443</color>
+                    <markup>false</markup>
+                    <shape>circle</shape>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="23" controlTypeID="__group__" x="70" y="82" w="164" h="164" measuredW="164" measuredH="164" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Person%20Box</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="0" w="164" h="164" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="23">
+          <controlProperties>
+            <backgroundAlpha>0</backgroundAlpha>
+            <borderColor>3355443</borderColor>
+            <color>3355443</color>
+            <markup>false</markup>
+            <shape>roundRect</shape>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="__group__" x="36" y="5" w="94" h="159" measuredW="94" measuredH="159" zOrder="1" locked="false" isInGroup="23">
+          <controlProperties>
+            <controlName/>
+          </controlProperties>
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="71" w="94" h="88" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>3355443</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>roundRect</shape>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::RoundButton" x="20" y="64" w="55" h="95" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>3355443</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>roundRect</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="18" y="0" w="58" h="72" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>16777215</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>circle</shape>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="24" controlTypeID="__group__" x="431" y="84" w="164" h="164" measuredW="164" measuredH="164" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Group%20Box%203%20people</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="0" w="164" h="164" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="24">
+          <controlProperties>
+            <backgroundAlpha>0</backgroundAlpha>
+            <borderColor>3355443</borderColor>
+            <color>3355443</color>
+            <markup>false</markup>
+            <shape>roundRect</shape>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="__group__" x="15" y="4" w="134" h="159" measuredW="134" measuredH="159" zOrder="1" locked="false" isInGroup="24">
+          <controlProperties>
+            <controlName/>
+          </controlProperties>
+          <groupChildrenDescriptors>
+            <control controlID="5" controlTypeID="com.balsamiq.mockups::RoundButton" x="86" y="24" w="48" h="59" measuredW="32" measuredH="32" zOrder="3" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>16777215</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>circle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="7" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="75" w="134" h="83" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>3355443</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>roundRect</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="8" controlTypeID="com.balsamiq.mockups::RoundButton" x="2" y="24" w="48" h="59" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>16777215</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>circle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="9" controlTypeID="com.balsamiq.mockups::RoundButton" x="42" y="64" w="55" h="95" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>3355443</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>roundRect</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="10" controlTypeID="com.balsamiq.mockups::RoundButton" x="40" y="0" w="58" h="72" measuredW="32" measuredH="32" zOrder="4" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>16777215</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>circle</shape>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Label" x="429" y="261" w="-1" h="-1" measuredW="166" measuredH="26" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>true</bold>
+        <color>2848996</color>
+        <size>18</size>
+        <text>Group%20Box%203%20People</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="__group__" x="446" y="334" w="134" h="158" measuredW="134" measuredH="158" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Group%203%20people</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="1" controlTypeID="__group__" x="0" y="0" w="134" h="158" measuredW="134" measuredH="158" zOrder="0" locked="false" isInGroup="26">
+          <controlProperties>
+            <controlName/>
+          </controlProperties>
+          <groupChildrenDescriptors>
+            <control controlID="5" controlTypeID="com.balsamiq.mockups::RoundButton" x="86" y="24" w="48" h="59" measuredW="32" measuredH="32" zOrder="3" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>16777215</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>circle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="7" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="75" w="134" h="83" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>3355443</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>roundRect</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="8" controlTypeID="com.balsamiq.mockups::RoundButton" x="2" y="24" w="48" h="59" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>16777215</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>circle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="9" controlTypeID="com.balsamiq.mockups::RoundButton" x="42" y="64" w="55" h="75" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>3355443</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>roundRect</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="10" controlTypeID="com.balsamiq.mockups::RoundButton" x="40" y="0" w="58" h="72" measuredW="32" measuredH="32" zOrder="4" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>16777215</borderColor>
+                <color>3355443</color>
+                <markup>false</markup>
+                <shape>circle</shape>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Label" x="447" y="507" w="-1" h="-1" measuredW="131" measuredH="26" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>true</bold>
+        <color>2848996</color>
+        <size>18</size>
+        <text>Group%203%20People</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

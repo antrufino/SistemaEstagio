@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="#{localeBean.locale}" 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<f:view contentType="text/html">
+<h:head>
+	<ui:include src="/template/templatePageHeader.xhtml" />
+</h:head>
+<h:body styleClass="login-body">
+	<div class="container">
+		<p:growl id="growlMessage" autoUpdate="true" showDetail="true" showSummary="true"/>
+      <h:form styleClass="form-signin" >
+        <h2 class="form-signin-heading">Cadastre-se</h2>
+        <div class="login-wrap">
+            <div class="user-login-info">
+            	<div class="text-center">
+            		<p:commandButton action="#{cadastroBean.addAluno()}" id="buttonAluno" value="Aluno" update="@form" process="@this" styleClass="btn btn-sm"/>
+        			<p:commandButton action="#{cadastroBean.addEmpresa()}" id="buttonEmpresa" value="Empresa" update="@form" process="@this" styleClass="btn btn-sm"/>
+            	</div>
+            	<p:outputPanel id="estagiario" rendered="#{cadastroBean.form('aluno')}" styleClass="form-horizontal">					
+					<br/>					
+					<p:inputText 
+					    styleClass="form-control" placeholder="Nome"
+						value="#{cadastroBean.pessoa.nome}" maxlength="80" rendered="true"
+						requiredMessage="Informe o Nome!" required="true" 						
+					/>					
+					<p:inputText 
+					    styleClass="form-control" placeholder="Matricula"
+						value="#{cadastroBean.aluno.matricula}" maxlength="80" rendered="true"
+						requiredMessage="Informe a Matrícula!" required="true" 
+					/>
+					<p:inputText 
+					    styleClass="form-control" placeholder="E-Mail"
+						value="#{cadastroBean.pessoa.email}" maxlength="80" rendered="true"
+						requiredMessage="Informe o E-Mail!" required="true"
+						type="email" 
+					/>
+					<br/>
+					<p:password 
+					    styleClass="form-control" placeholder="Senha"
+						value="#{cadastroBean.usuario.cdSenha}" maxlength="80" rendered="true"
+						requiredMessage="Informe o Senha!" required="true" 
+					/>
+					<p:password 
+					    styleClass="form-control" placeholder="Repetir a Senha"
+						value="#{cadastroBean.confirmeSenha}" maxlength="80" rendered="true"
+						requiredMessage="Repita a senha!" required="true" 
+					/>
+			</p:outputPanel> 
+			
+			<p:outputPanel id="empresa" rendered="#{cadastroBean.form('empresa')}" styleClass="form-horizontal">				
+				<br/>
+				<p:inputText 
+				    styleClass="form-control" placeholder="Razão Social"
+					value="#{cadastroBean.empresa.dsEmpresa}" maxlength="80" rendered="true"
+					requiredMessage="Informe a Razão Social!" required="true" 
+				/>
+
+				<p:inputText 
+				    styleClass="form-control" placeholder="Responsável"
+					value="#{cadastroBean.pessoa.nome}" maxlength="80" rendered="true"
+					requiredMessage="Informe o Responsável!" required="true" 
+				/>								
+				<p:inputText 
+				    styleClass="form-control" placeholder="E-Mail"
+					value="#{cadastroBean.pessoa.email}" maxlength="80" rendered="true" type="email"
+					requiredMessage="Informe o E-Mail!" required="true" 
+				/>
+				<br/>	
+				<p:password  
+				    styleClass="form-control" placeholder="Senha"
+					value="#{cadastroBean.usuario.cdSenha}" maxlength="80" rendered="true"
+					requiredMessage="Informe o Senha!" required="true" 
+				/>
+
+				<p:password 
+				    styleClass="form-control" placeholder="Repetir a Senha"
+					value="#{cadastroBean.confirmeSenha}" maxlength="80" rendered="true"
+					requiredMessage="Repita a senha!" required="true" 
+				/>
+				</p:outputPanel> 
+            </div>
+            <p:commandLink styleClass="btn btn-lg btn-login btn-block" value="Cadastrar" actionListener="#{cadastroBean.salvar}" update="@form"/>
+            <div class="registration">
+                Já possui registro?
+                <a class="" href="index.xhtml">
+                    Login!
+                </a>
+            </div>
+        </div>
+
+      </h:form>
+
+    </div>
+
+	<!--Core js-->
+    <script src="js/jquery.js"></script>
+    <script src="bs3/js/bootstrap.min.js"></script>
+</h:body>
+</f:view>
+</html>

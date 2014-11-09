@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/layout/layoutPrivateDefault.xhtml">
+	<ui:define name="title">Wizard - Cadastro</ui:define>
+	<ui:define name="container">
+		<h:form>
+	                 
+		    <p:growl id="growl" sticky="true" showDetail="true" />
+		 
+		    <p:wizard widgetVar="wiz" flowListener="#{wizardBean.onFlowProcess}" backLabel="Voltar" nextLabel="Avançar" >
+		    <p:log></p:log>
+		        <p:tab id="personal" title="Pessoal">
+		            <p:panel header="Informações Pessoais">
+		                <p:messages />
+		                <h:panelGrid columns="2" >
+		                
+		                    <h:outputText value="Nome:*" />
+		                    <p:inputText value="#{wizardBean.pessoa.nome}" required="true" label="nome"/>
+		 
+		                    <h:outputText value="Cpf:* " />
+		                    <p:inputMask value="#{wizardBean.pessoa.cpf}" required="true" label="cpf" mask="999.999.999-99"  />
+		                    
+		                    <h:outputText value="Nascimento: " />
+		                    <p:inputMask value="#{wizardBean.pessoa.dtNascimento}" mask="99/99/9999">
+		                    	<f:convertDateTime pattern="dd/MM/yyyy" locale="pt,BR" timeZone="GMT-03:00" type="both"/> 
+		                    </p:inputMask>
+		                
+		                </h:panelGrid>
+		            </p:panel>
+		        </p:tab>
+		 
+		        <p:tab id="address" title="Contato">
+		            <p:panel header="Contato">
+		                <p:messages />
+		                <h:panelGrid columns="2" >
+		                    <h:outputText value="Telefone: " />
+		                    <p:inputMask value="#{wizardBean.contato.dsTelefone}" mask="(99)9999-9999"/>
+		 
+		                    <h:outputText value="email: " />
+		                    <p:inputText value="#{wizardBean.pessoa.email}" />
+		 				</h:panelGrid>
+		            </p:panel>
+		        </p:tab>
+		        <p:tab id="confirm" title="Confirmação">
+		            <p:panel header="Confirme suas informações">
+		                <h:panelGrid id="confirmation" columns="2" >
+		                    <h:panelGrid columns="2" >
+		                        <h:outputText value="Nome: " />
+		                        <h:outputText value="#{wizardBean.pessoa.nome}" styleClass="outputLabel"/>
+		 
+		                        <h:outputText value="Cpf: " />
+		                        <h:outputText value="#{wizardBean.pessoa.cpf}" styleClass="outputLabel"/>
+		 
+		                        <h:outputText value="Nascimento: " />
+		                        <h:outputText value="#{wizardBean.pessoa.dtNascimento}" styleClass="outputLabel">
+		                    	    <f:convertDateTime pattern="dd/MM/yyyy" locale="pt,BR" timeZone="GMT-03:00" type="both"/>
+		                        </h:outputText>
+		                 
+		                        <h:outputText value="Telefone: " />
+		                        <h:outputText value="#{wizardBean.contato.dsTelefone}" styleClass="outputLabel"/>
+		 
+		                        <h:outputText value="Email: " />
+		                        <h:outputText value="#{wizardBean.pessoa.email}" styleClass="outputLabel"/>
+		 
+		                  </h:panelGrid>
+		 
+		                </h:panelGrid>
+		 
+		                <p:commandButton value="Submit" actionListener="#{wizardBean.save}" update="growl" process="@this"/>
+		            </p:panel>
+		        </p:tab>
+		    </p:wizard>
+		 
+		</h:form>
+		</ui:define>
+	</ui:composition>
+</html>

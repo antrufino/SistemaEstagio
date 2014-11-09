@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Copyright 2013-2014 J7 Soluções Inteligentes.
+	by Edivando Alves
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition>
+	<aside>
+	    <div id="sidebar" class="nav-collapse">
+	        <div class="leftside-navigation">
+	        	<!-- Menu Administrador -->
+	        	<p:outputPanel rendered="#{loginBean.usuario.tipoUsuario.id eq 1}">
+	        		<ul class="sidebar-menu" id="nav-accordion">
+						<li>
+			                <a href="#">
+			                    <i class="fa fa-user"></i>
+			                    <span>Estágiários</span>
+			                </a>
+			            </li>
+			           	<li>
+			                <a href="#">
+			                    <i class="fa fa-user"></i>
+			                    <span>Ofertas de Estágio</span>
+			                </a>
+			            </li>
+			            <li>
+			                <a href="empresa.xhtml">
+			                    <i class="fa fa-user"></i>
+			                    <span>Empresas</span>
+			                </a>
+			            </li>
+		        	</ul>
+	        	</p:outputPanel>
+	        	
+	        	<!-- Menu Empresa -->
+	        	<p:outputPanel rendered="#{loginBean.usuario.tipoUsuario.id eq 2}">
+	        		<ul class="sidebar-menu" id="nav-accordion">
+			            <li>
+			                <a href="#">
+			                    <i class="fa fa-user"></i>
+			                    <span>Ofertar Estágio</span>
+			                </a>
+			            </li>
+			            <li>
+			                <a href="#">
+			                    <i class="fa fa-user"></i>
+			                    <span>Pesquisar Estagiários</span>
+			                </a>
+			            </li>
+		        	</ul>
+	        	</p:outputPanel>
+	        	
+	        	<!-- Menu Estagiario -->
+	        	<p:outputPanel rendered="#{loginBean.usuario.tipoUsuario.id eq 3}">
+	        		<ul class="sidebar-menu" id="nav-accordion">
+			            <li>
+			                <a href="#">
+			                    <i class="fa fa-user"></i>
+			                    <span>Ofertas de Estágio</span>
+			                </a>
+			            </li>
+			            <li>
+			                <a href="#">
+			                    <i class="fa fa-user"></i>
+			                    <span>Perfil</span>
+			                </a>
+			            </li>
+		        	</ul>
+	        	</p:outputPanel>
+	        
+	            
+	       </div>        
+	    </div>
+	</aside>
+</ui:composition>
+</html>

@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="layout/layoutPrivateDefault.xhtml">
+	<ui:define name="title">Perfil da Empresa</ui:define>
+	<ui:define name="container">
+	<!-- Main Content Start -->
+		<div class="row">
+            <div class="col-md-12">
+                <section class="panel">
+                    <div class="panel-body profile-information">
+                       <div class="col-md-3">
+                           <div class="profile-pic text-center">
+                               <img src="images/avatar-empresa.jpg" alt=""/>
+                           </div>
+                       </div>
+                       <div class="col-md-6">
+                           <div class="profile-desk">
+                               <h1>Nome Fantasia da Empresa</h1>
+                               <p>
+                               		Breve descrição da empresa aqui...                            
+
+                               </p>
+                           </div>
+                       </div>
+                       <div class="col-md-3">
+                           <div class="profile-statistics">
+                               <h4>Redes Sociais</h4>
+                               <p>Nossa Empresa nas Redes Sociais</p>
+                               <ul>
+                                   <li>
+                                       <a href="#">
+                                           <i class="fa fa-facebook"></i>
+                                       </a>
+                                   </li>
+                                   <li class="active">
+                                       <a href="#">
+                                           <i class="fa fa-twitter"></i>
+                                       </a>
+                                   </li>
+                                   <li>
+                                       <a href="#">
+                                           <i class="fa fa-google-plus"></i>
+                                       </a>
+                                   </li>
+                                   <li>
+                                       <a href="#">
+                                           <i class="fa fa-pinterest"></i>
+                                       </a>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="col-md-12">
+                <section class="panel">
+                    <header class="panel-heading tab-bg-dark-navy-blue">
+                        <ul class="nav nav-tabs nav-justified ">
+                            <li class="active">
+                                <a data-toggle="tab" href="#sobre-nos" class="contact-map">
+                                    Sobre Nós
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#projetos">
+                                    Projetos e Atuação
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#estagiarios">
+                                    Nossos Estagiários
+                                </a>
+                            </li>
+                            <!--<li>
+                                <a data-toggle="tab" href="#colaboradores" class="contact-map">
+                                    Meus Contatos
+                                </a>
+                            </li>-->
+                        </ul>
+                    </header>
+                    <div class="panel-body">
+                        
+                        <div class="tab-content tasi-tab">
+                            <div id="sobre-nos" class="tab-pane active">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="prf-contacts">
+                                            <h2> <span><i class="fa fa-building-o"></i></span> localização </h2>
+                                            <div class="location-info">
+                                                <p><b>Endereço<br/></b>
+                                                    Av. Domingos Olímpio, 331, Benfica <br/>
+                                                    Fortaleza - Ceará<br/>
+                                                    Brasil</p>
+
+                                                <p><b>Matriz da Empresa<br/></b>
+                                                    São Bernardo do Campo - São Paulo<br/>
+                                                    Brasil
+                                                </p>
+                                            </div>
+                                            <h2> <span><i class="fa fa-phone"></i></span> contatos</h2>
+                                            <div class="location-info">
+                                                <p><b>Telefone</b>: +55 85 3376 6284 <br/>
+                                                   <b>Fax</b>: +55 85 8376 6284
+                                                </p>
+                                                <p><b>Email</b>: minha.empresa@myemail.com<br/>
+                                                   <b>Email</b>: minha.empresa2@myemail.com<br/>
+                                                </p>
+                                                
+                                            </div>
+                                            <h2> <span><i class="fa fa-external-link"></i></span> Site e Redes Sociais</h2>
+                                            <div class="location-info">
+                                                <p>
+                                                	<b>Site</b>: <a href="http://www.minhaempresa.com.br"> http://www.minhaempresa.com.br </a><br/>
+                                                    <b>Página no Facebook</b> : <a href="https://www.facebook.com/minhaempresa"> https://www.facebook.com/minhaempresa </a><br/>
+                                                    <b>Twitter</b>  : <a href="https://twitter.com/minha_empresa"> https://twitter.com/minha_empresa </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div id="map-canvas"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="projetos" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="recent-act">
+                                            <h1>Atuação Recente</h1>
+                                            <div class="activity-icon green">
+                                                <i class="fa fa-code"></i>
+                                            </div>
+                                            <div class="activity-desk">
+                                                <h2 class = "red">Pro-vita</h2>
+                                                <p>Sistema gerenciador de Hospitais</p>
+                                            </div>
+                                            <div class="activity-icon green">
+                                                <i class="fa fa-coffee"></i>
+                                            </div>
+                                            <div class="activity-desk">
+                                                <h2 class="red">Hard Coding</h2>
+                                                <p>Curso de Java para Surdos</p>
+                                            </div>
+                                            <div class="activity-icon green">
+                                                <i class="fa fa-apple"></i>
+                                            </div>
+                                            <div class="activity-desk">
+                                                <h2 class="red">iFlip</h2>
+                                                <p>App de WebRadio</p>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                       <div class="prf-box">
+                                            <h3 class="prf-border-head">Minhas Estatísticas</h3>
+                                            <div class=" wk-progress pf-status">
+                                                <div class="col-md-8 col-xs-8">Total de vagas já ofertadas</div>
+                                                <div class="col-md-4 col-xs-4">
+                                                    <strong>10</strong>
+                                                </div>
+                                            </div>
+                                            <div class=" wk-progress pf-status">
+                                                <div class="col-md-8 col-xs-8">Seleções realizadas</div>
+                                                <div class="col-md-4 col-xs-4">
+                                                    <strong>50</strong>
+                                                </div>
+                                            </div>
+                                            <div class=" wk-progress pf-status">
+                                                <div class="col-md-8 col-xs-8">Estagiários contratados</div>
+                                                <div class="col-md-4 col-xs-4">
+                                                    <strong>33</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="prf-box">
+                                            <h3 class="prf-border-head">Serviços Prestados</h3>
+                                            
+                                            <div class=" wk-progress tm-membr">
+                                                <div class="col-md-2 col-xs-2">
+                                                    <div class="tm-avatar">
+                                                        <img src="images/avatar-empresa.jpg" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-xs-7">
+                                                    <span class="tm">Ivia Software</span>
+                                                </div>
+                                                <div class="col-md-3 col-xs-3">
+                                                    <a href="#" class="btn btn-white">Perfil</a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class=" wk-progress tm-membr">
+                                                <div class="col-md-2 col-xs-2">
+                                                    <div class="tm-avatar">
+                                                        <img src="images/avatar-empresa.jpg" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-xs-7">
+                                                    <span class="tm">HLT Hardware Inc.</span>
+                                                </div>
+                                                <div class="col-md-3 col-xs-3">
+                                                    <a href="#" class="btn btn-white">Perfil</a>
+                                                </div>
+                                            </div>
+                                            <div class=" wk-progress tm-membr">
+                                                <div class="col-md-2 col-xs-2">
+                                                    <div class="tm-avatar">
+                                                        <img src="images/avatar-empresa.jpg" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-xs-7">
+                                                    <span class="tm">SEFIN</span>
+                                                </div>
+                                                <div class="col-md-3 col-xs-3">
+                                                    <a href="#" class="btn btn-white">Perfil</a>
+                                                </div>
+                                            </div>
+                                            <div class=" wk-progress tm-membr">
+                                                <div class="col-md-2 col-xs-2">
+                                                    <div class="tm-avatar">
+                                                        <img src="images/avatar-empresa.jpg" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-xs-7">
+                                                    <span class="tm"> Shine Tech </span>
+                                                </div>
+                                                <div class="col-md-3 col-xs-3">
+                                                    <a href="#" class="btn btn-white">Perfil</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="estagiarios" class="tab-pane">
+                                <div class="col-md-12">
+                                    <div class="col-md-6">
+                                       <div class="prf-box">
+                                            <h3 class="prf-border-head">Nossos Ex-Estagiários</h3>
+                                            
+                                            <div class=" wk-progress tm-membr">
+                                                <div class="col-md-2 col-xs-2">
+                                                    <div class="tm-avatar">
+                                                        <img src="images/chat-avatar2.jpg" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-xs-7">
+                                                    <span class="tm">Ney Filho</span>
+                                                </div>
+                                                <div class="col-md-3 col-xs-3">
+                                                    <a href="#" class="btn btn-white">Perfil</a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class=" wk-progress tm-membr">
+                                                <div class="col-md-2 col-xs-2">
+                                                    <div class="tm-avatar">
+                                                        <img src="images/avatar-mini-2.jpg" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-xs-7">
+                                                    <span class="tm">Sophia Marques</span>
+                                                </div>
+                                                <div class="col-md-3 col-xs-3">
+                                                    <a href="#" class="btn btn-white">Perfil</a>
+                                                </div>
+                                            </div>
+                                            <div class=" wk-progress tm-membr">
+                                                <div class="col-md-2 col-xs-2">
+                                                    <div class="tm-avatar">
+                                                        <img src="images/avatar-mini-3.jpg" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-xs-7">
+                                                    <span class="tm">Paulo Carneiro</span>
+                                                </div>
+                                                <div class="col-md-3 col-xs-3">
+                                                    <a href="#" class="btn btn-white">Perfil</a>
+                                                </div>
+                                            </div>
+                                            <div class=" wk-progress tm-membr">
+                                                <div class="col-md-2 col-xs-2">
+                                                    <div class="tm-avatar">
+                                                        <img src="images/avatar-mini.jpg" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-xs-7">
+                                                    <span class="tm"> João Felipe </span>
+                                                </div>
+                                                <div class="col-md-3 col-xs-3">
+                                                    <a href="#" class="btn btn-white">Perfil</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                       <div class="prf-box">
+                                            <h3 class="prf-border-head">Nossos Estagiários</h3>
+                                            
+                                            <div class=" wk-progress tm-membr">
+                                                <div class="col-md-2 col-xs-2">
+                                                    <div class="tm-avatar">
+                                                        <img src="images/avatar-mini.jpg" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-xs-7">
+                                                    <span class="tm">Ronald Shoulder</span>
+                                                </div>
+                                                <div class="col-md-3 col-xs-3">
+                                                    <a href="#" class="btn btn-white">Perfil</a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class=" wk-progress tm-membr">
+                                                <div class="col-md-2 col-xs-2">
+                                                    <div class="tm-avatar">
+                                                        <img src="images/avatar-mini-2.jpg" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-xs-7">
+                                                    <span class="tm">Maria Silva</span>
+                                                </div>
+                                                <div class="col-md-3 col-xs-3">
+                                                    <a href="#" class="btn btn-white">Perfil</a>
+                                                </div>
+                                            </div>
+                                            <div class=" wk-progress tm-membr">
+                                                <div class="col-md-2 col-xs-2">
+                                                    <div class="tm-avatar">
+                                                        <img src="images/avatar-mini-3.jpg" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-xs-7">
+                                                    <span class="tm">João Ferreira</span>
+                                                </div>
+                                                <div class="col-md-3 col-xs-3">
+                                                    <a href="#" class="btn btn-white">Perfil</a>
+                                                </div>
+                                            </div>
+                                            <div class=" wk-progress tm-membr">
+                                                <div class="col-md-2 col-xs-2">
+                                                    <div class="tm-avatar">
+                                                        <img src="images/avatar-mini-4.jpg" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-xs-7">
+                                                    <span class="tm"> Cris Xavier </span>
+                                                </div>
+                                                <div class="col-md-3 col-xs-3">
+                                                    <a href="#" class="btn btn-white">Perfil</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                      
+                            <div id="settings" class="tab-pane ">
+                                <div class="position-center">
+                                    <div class="prf-contacts sttng">
+                                        <h2>  Personal Information</h2>
+                                    </div>
+                                    <form role="form" class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label"> Avatar</label>
+                                            <div class="col-lg-6">
+                                                <input type="file" id="exampleInputFile" class="file-pos"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Company</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder=" " id="c-name" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Lives In</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder=" " id="lives-in" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Country</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder=" " id="country" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Description</label>
+                                            <div class="col-lg-10">
+                                                <textarea rows="10" cols="30" class="form-control" id="" name=""></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="prf-contacts sttng">
+                                        <h2> socail networks</h2>
+                                    </div>
+                                    <form role="form" class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Facebook</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder=" " id="fb-name" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Twitter</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder=" " id="twitter" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Google plus</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder=" " id="g-plus" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Flicr</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder=" " id="flicr" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Youtube</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder=" " id="youtube" class="form-control"/>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                    <div class="prf-contacts sttng">
+                                        <h2>Contact</h2>
+                                    </div>
+                                    <form role="form" class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Address 1</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder=" " id="addr1" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Address 2</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder=" " id="addr2" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Phone</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder=" " id="phone" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Cell</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder=" " id="cell" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Email</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder=" " id="email" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Skype</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder=" " id="skype" class="form-control"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-lg-offset-2 col-lg-10">
+                                                <button class="btn btn-primary" type="submit">Save</button>
+                                                <button class="btn btn-default" type="button">Cancel</button>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- page end-->
+
+
+	</ui:define>
+</ui:composition>
+</html>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/layout/layoutPrivateDefault.xhtml">
+	<ui:define name="title">Ofertas de Estágio</ui:define>
+	<ui:define name="container">
+
+
+
+		<h:form>
+			
+			
+				<div class="row">
+				<div class="col-sm-4">
+				<p:outputLabel value="PESQUISA: " />
+				&nbsp;
+				<p:inputText value="#{estagioBean.pesquisa}"
+				placeholder="Insira sua pesquisa"></p:inputText>
+				&nbsp;
+				</div>
+				<div class="col-sm-4">
+					<label for="dtInicio">Data de Início:</label> &nbsp;
+					<p:calendar id="dtInicio"
+						requiredMessage="Informe a data de início !"
+						value="#{estagioBean.dtInicial}" pattern="dd/MM/yyyy" />
+				</div>
+				<div class="col-sm-4">
+					<label for="dtNascimento">Data de Fim:</label> &nbsp;
+					<p:calendar id="dtFim" requiredMessage="Informe a data de fim !"
+						value="#{estagioBean.dtFim}" pattern="dd/MM/yyyy" />
+				</div>
+			</div>
+			&nbsp;
+			<div class="row">
+			&nbsp;
+			&nbsp;
+				<p:commandLink action="#{estagioBean.mostrarTodos}" update="@form"
+				styleClass="btn btn-primary btn-sm">
+				<i class="fa fa-save" />
+						Todas em aberto
+					</p:commandLink>
+					&nbsp;
+				<p:commandLink action="#{estagioBean.pesquisarEstagios}"
+				update="@form" styleClass="btn btn-primary btn-sm">
+				<i class="fa fa-save" />
+						Pesquisar
+					</p:commandLink>
+				</div>
+			
+
+			<p:dataTable id="estagioTable" var="estagio"
+				value="#{estagioBean.estagioList}" paginator="true"
+				emptyMessage="Nenhum estágio encontrado!"
+				rendered="#{!estagioBean.form}">
+
+				<p:column>
+					<div class="row">
+						<div class="col-sm-12">
+							<h4>#{estagio.dsEstagio}</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">Empresa</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">
+							<p:graphicImage value="/images/ofertaRelogioInicial.jpg"
+								width="36" height="36" />&nbsp;
+							<h:outputText value="#{estagio.dtInicio}">
+								<f:convertDateTime pattern="dd/MM/yyyy" />
+							</h:outputText>
+						</div>
+						<div class="col-sm-2">
+							<p:graphicImage value="/images/ofertaRelogioFim.jpg" width="36"
+								height="36" />&nbsp;
+							<h:outputText value="#{estagio.dtFim}">
+								<f:convertDateTime pattern="dd/MM/yyyy" />
+							</h:outputText>
+						</div>
+						<div class="col-sm-2">
+							<p:graphicImage value="/images/ofertaCifrao.jpg" width="36"
+								height="36" />
+							R$ #{estagio.bolsa}
+						</div>
+						<div class="col-sm-3">
+							<p:graphicImage value="/images/ofertaBeneficios.jpg" width="36"
+								height="36" />
+							#{estagio.beneficios}
+						</div>
+						<div class="col-sm-1">#{estagio.chSemanal}h/semana</div>
+					</div>
+				</p:column>
+			</p:dataTable>
+
+		</h:form>
+
+	</ui:define>
+</ui:composition>
+
+
+</html>
