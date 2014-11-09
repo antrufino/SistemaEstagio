@@ -2,7 +2,7 @@ package br.edu.ifce.web;
 
 import java.io.Serializable;
 
-import javax.el.ELContext;
+//import javax.el.ELContext;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -28,9 +28,9 @@ public class WizardBean implements Serializable{
 		return pessoa;
 	}
 	
-	public Usuario getUsuario(){
+/*	public Usuario getUsuario(){
 		return getLoginBean().getUsuario();
-	}
+	}*/
 	
 	public ContatoTelefone getContato(){
 		if(contato == null)
@@ -43,7 +43,7 @@ public class WizardBean implements Serializable{
 	}
 	
 	public void setUsuario(Usuario novo_usuario){
-		getLoginBean().setUsuario(novo_usuario);
+		//getLoginBean().setUsuario(novo_usuario);
 	}
 	
 	public void setContato(ContatoTelefone novo_contato){
@@ -72,10 +72,10 @@ public class WizardBean implements Serializable{
         FacesMessage msg = new FacesMessage("Cadastro feito com sucesso", "Bem vindo :" + pessoa.getNome());
         FacesContext.getCurrentInstance().addMessage(null, msg);
     }
-    
+/*    
     public LoginBean getLoginBean(){
     	ELContext contexto = FacesContext.getCurrentInstance().getELContext();
     	return (LoginBean) contexto.getELResolver().getValue(contexto, null, "loginBean");
     }
-
+*/
 }
